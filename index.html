@@ -118,11 +118,11 @@
 
 					var object = new THREE.Object3D();
 
-					object.position.x = 800 * Math.cos( theta ) * Math.sin( phi );
-					object.position.y = 800 * Math.sin( theta ) * Math.sin( phi );
-					object.position.z = 800 * Math.cos( phi );
+					object.position.x = 1300 * Math.cos( theta ) * Math.sin( phi );
+					object.position.y = 1300 * Math.sin( theta ) * Math.sin( phi );
+					object.position.z = 1300 * Math.cos( phi );
 
-					vector.copy( object.position ).multiplyScalar( 4 );
+					vector.copy( object.position ).multiplyScalar( 2 );
 
 					object.lookAt( vector );
 
@@ -139,9 +139,9 @@
 
 					var object = new THREE.Object3D();
 
-					object.position.x = 900 * Math.sin( phi );
-					object.position.y = - ( i * 8 ) + 450;
-					object.position.z = 900 * Math.cos( phi );
+					object.position.x = 1400 * Math.sin( phi );
+					object.position.y = - ( i * 8 ) + 700;
+					object.position.z = 1400 * Math.cos( phi );
 
 					vector.x = object.position.x * 2;
 					vector.y = object.position.y;
@@ -161,7 +161,7 @@
 
 					object.position.x = ( ( i % 5 ) * 400 ) - 800;
 					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
-					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
+					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 1000;
 
 					targets.grid.push( object );
 
